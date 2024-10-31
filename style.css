@@ -32,13 +32,13 @@ body {
     border-top-left-radius:900px;
     border-top-right-radius:900px;
     z-index:1;
-    left:-230px;
+    left:-320px;
     top:60px;
 }
 
 #white-part-of-light1 {
     background:white;
-    left:-230px;
+    left:-320px;
     top:-75px;
     position:relative;
     width:120px;
@@ -54,14 +54,37 @@ body {
     border-top-left-radius:900px;
     border-top-right-radius:900px;
     z-index:1;
-    left:200px;
+    left:140px;
     top:-240px;
 }
 
 #white-part-of-light2 {
     background:white;
-    left:200px;
+    left:140px;
     top:-375px;
+    position:relative;
+    width:120px;
+    height:150px;
+    border-radius:60px;
+    z-index:0;
+}
+
+#right-light {
+    background:purple;
+    width:120px;
+    height:150px;
+    position:relative;
+    border-top-left-radius:900px;
+    border-top-right-radius:900px;
+    z-index:1;
+    right:-620px;
+    top:-535px;
+}
+
+#white-part-of-light3 {
+    background:white;
+    right:-620px;
+    top:-670px;
     position:relative;
     width:120px;
     height:150px;
@@ -84,7 +107,7 @@ body {
     background: #f2fbf1;
     border-top-left-radius:90px;
     border-top-right-radius:90px;
-    bottom:330px;
+    bottom:620px;
 }
 
 #spooky #body:before, #spooky #body:after {
@@ -171,7 +194,7 @@ body {
     border-radius:50%;
     animation: translate 2s infinite;
     position:relative;
-    bottom:290px;
+    bottom:570px;
 }
 
 @keyframes floaty {
