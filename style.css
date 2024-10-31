@@ -6,7 +6,7 @@ body {
     justify-content:center;
     align-items:center;
     margin:0;
-    background:#424f6f;
+    background: #643838;
 
 }
 
@@ -15,7 +15,7 @@ body {
     height:400px;
     padding:0;
     box-sizing:border-box;
-    background:#424f6f;
+    background:#643838;
 }
 
 *:after, *:before {
@@ -23,12 +23,29 @@ body {
 
 }
 
+#left-light {
+    background:purple;
+    width:120px;
+    height:150px;
+    position:relative;
+    border-top-left-radius:900px;
+    border-top-right-radius:900px;
+    z-index:1;
+    left:-110px;
+    top:-30px;
+}
+
+#white-part-of-light {
+    background:white;
+    width:30px;
+    height:30px;
+}
+
 #spooky {
     margin:10% auto;
     width:80%;
     height:80%;
-    animation: floaty 2s infinite;
-
+    animation: translate 2s infinite;
 }
 
 #spooky #body {
@@ -123,7 +140,7 @@ body {
     width:180px;
     height:40px;
     border-radius:50%;
-    animation: zoom 2s infinite;
+    animation: translate 2s infinite;
 }
 
 @keyframes floaty {
@@ -137,12 +154,13 @@ body {
     }
 }
 
-@keyframes zoom {
-    0%, 100% {
-        transform:scale(1);
-    }
 
+
+@keyframes translate {
     50% {
-        transform:scale(0.5);
+        transform:translate(100px);
+    }
+    0%, 100% {
+        transform:translate(-100px);
     }
 }
